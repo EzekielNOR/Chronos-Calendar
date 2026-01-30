@@ -4,6 +4,8 @@ A clean, local-first calendar app for iPad (and other devices) that syncs with G
 
 **Your data stays on your device.** Calendar URLs are stored locally in your browser—nothing is sent to any server.
 
+![Chronos Calendar](chronos1.png)
+
 ---
 
 ## Features
@@ -26,9 +28,12 @@ Go to: **[https://ezekielnor.github.io/Chronos-Calendar/](https://ezekielnor.git
 > ⚠️ Must use Safari—won't work from Files app or other browsers.
 
 ### Step 2: Add to Home Screen
+
 1. Tap the **Share button** (square with arrow pointing up)
 2. Scroll down and tap **"Add to Home Screen"**
 3. Name it whatever you like, tap **Add**
+
+![Add to Home Screen](chronos2.png)
 
 ### Step 3: Open from Home Screen
 Launch Chronos from your home screen. It now runs as a standalone app—no browser bars, works offline.
@@ -108,4 +113,4 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 
 Built with ☕ and frustration with existing calendar apps.
 
-Questions or issues? Let me know!
+Questions or issues? Open an issue or reach out!
