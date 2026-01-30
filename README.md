@@ -21,12 +21,12 @@ A clean, local-first calendar app for iPad (and other devices) that syncs with G
 
 ---
 
-## Installation (iPad)
+## Installation (iPad Instructions)
 
-### Step 1: Open in Safari
+### Step 1: Open in Safari (Or other apps that let's you create a webapp on you home screen).
 Go to: **[https://ezekielnor.github.io/Chronos-Calendar/](https://ezekielnor.github.io/Chronos-Calendar/)**
 
-> ⚠️ Must use Safari—won't work from Files app or other browsers.
+> ⚠️Only tested on Safari for iPad. Others may work, but launching from Files app etc will not.
 
 ### Step 2: Add to Home Screen
 
@@ -177,7 +177,9 @@ Repeat for each calendar. They'll all show up color-coded in your view.
 ## Credits
 
 Created by **Ezekiel Hauge**  
-[Eztheory AS](https://eztheory.no) · [GitHub](https://github.com/EzekielNOR/Chronos-Calendar)
+[Eztheory AS] · [GitHub](https://github.com/EzekielNOR/Chronos-Calendar)
+
+<a href="https://www.buymeacoffee.com/ezekielnor" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 180px !important;" ></a>
 
 ---
 
