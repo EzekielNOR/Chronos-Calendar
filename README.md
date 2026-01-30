@@ -10,13 +10,14 @@ A clean, local-first calendar app for iPad (and other devices) that syncs with G
 
 ## Features
 
-- **Monthly view** optimized for iPad screens
-- **Morning briefing** pops up at 07:00 with your day's agenda
-- **30-minute reminders** with sound notification before events
-- **Multiple calendars** with custom names and colors
+- **Month & Week views** — toggle between views, swipe to navigate
+- **Event search** — quickly find any event by name
+- **Morning briefing** — pops up at 07:00 with your day's agenda
+- **Customizable reminders** — 15min, 30min, 1hr, or 2hrs before events
+- **Multiple calendars** — custom names, colors, and visibility toggles
 - **Tap any day** to see full event list, tap an event for details
 - **Works offline** after initial setup (syncs when online)
-- **Dark mode** easy on the eyes
+- **Dark mode** — easy on the eyes
 
 ---
 
@@ -32,8 +33,6 @@ Go to: **[https://ezekielnor.github.io/Chronos-Calendar/](https://ezekielnor.git
 1. Tap the **Share button** (square with arrow pointing up)
 2. Scroll down and tap **"Add to Home Screen"**
 3. Name it whatever you like, tap **Add**
-
-![Add to Home Screen](chronos2.png)
 
 ### Step 3: Open from Home Screen
 Launch Chronos from your home screen. It now runs as a standalone app—no browser bars, works offline.
@@ -56,6 +55,8 @@ Launch Chronos from your home screen. It now runs as a standalone app—no brows
 4. Pick a color
 5. Tap **Add Calendar**
 
+![Settings Panel](chronos2.png)
+
 Repeat for each calendar you want to track. They'll all show up color-coded.
 
 ---
@@ -64,9 +65,13 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 
 | Feature | Description |
 |---------|-------------|
+| **Month/Week toggle** | Switch views with the toggle buttons |
+| **Swipe navigation** | Swipe left/right to change weeks or months |
+| **Search** | Tap 🔍 to search events by name |
 | **Auto-sync** | Fetches updates every 60 seconds |
-| **Morning briefing** | Shows today's events at 07:00 (tap "Agenda" button anytime) |
-| **Event reminders** | Popup + sound 30 minutes before events |
+| **Morning briefing** | Shows today's events at 07:00 (or tap "Agenda" anytime) |
+| **Event reminders** | Popup + sound at your chosen time before events |
+| **Calendar toggle** | Show/hide calendars without deleting them |
 | **Day view** | Tap any day to see all events |
 | **Event details** | Tap an event for full info (time, location, description) |
 
@@ -77,7 +82,8 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 - **Enable notifications** when prompted—needed for reminders to work
 - **Multiple family members?** Each person sets up their own calendars on their own device. Nothing is shared between devices.
 - **Shared Google Calendar?** Just add the same calendar URL on each device
-- **Not updating?** Pull down to refresh, or close and reopen the app
+- **Hide a calendar temporarily?** Use the toggle switch in Settings instead of deleting
+- **Customize reminder time** in Settings (15min to 2 hours)
 
 ---
 
@@ -101,7 +107,7 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 **Calendar not showing events:**
 - Double-check the iCal URL is correct (should start with `https://`)
 - Make sure the calendar has events in the current month
-- Check if the calendar is set to public/shared in Google Calendar settings
+- Check the calendar toggle is enabled in Settings
 
 **No notifications:**
 - Tap "Enable" on the notification banner
@@ -111,6 +117,9 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 
 ## Credits
 
-Built with ☕ and frustration with existing calendar apps.
+Created by **Ezekiel Hauge**  
+[Eztheory AS](https://eztheory.no) · [GitHub](https://github.com/EzekielNOR/Chronos-Calendar)
+
+---
 
 Questions or issues? Open an issue or reach out!
