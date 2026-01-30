@@ -23,7 +23,7 @@ A clean, local-first calendar app for iPad (and other devices) that syncs with G
 
 ## Installation (iPad Instructions)
 
-### Step 1: Open in Safari (Or other apps that let's you create a webapp on you home screen).
+### Step 1: Open in Safari (Or other apps that lets you create a webapp on you home screen).
 Go to: **[https://ezekielnor.github.io/Chronos-Calendar/](https://ezekielnor.github.io/Chronos-Calendar/)**
 
 > ⚠️Only tested on Safari for iPad. Others may work, but launching from Files app etc will not.
