@@ -1,6 +1,6 @@
 # Chronos Calendar
 
-A clean, local-first calendar app for iPad (and other devices) that syncs with Google Calendar, iCloud, or any iCal feed.
+A clean, local-first calendar app for iPad (and other devices) that syncs with Google Calendar, iCloud, Outlook/Hotmail, or any iCal feed.
 
 **Your data stays on your device.** Calendar URLs are stored locally in your browser—nothing is sent to any server.
 
@@ -39,17 +39,71 @@ Launch Chronos from your home screen. It now runs as a standalone app—no brows
 
 ---
 
-## Setup: Adding Your Calendars
+## Getting Your Calendar URL
 
-### Get your Google Calendar secret URL:
-1. Open [Google Calendar](https://calendar.google.com) on a computer
-2. Click the **⚙️ gear icon** → **Settings**
-3. On the left, click the calendar you want to add
-4. Scroll down to **"Secret address in iCal format"**
-5. Copy the URL (starts with `https://calendar.google.com/calendar/ical/...`)
+Chronos needs an iCal URL to read your calendar. Here's how to get it for each provider:
 
-### Add it to Chronos:
-1. Tap the **⚙️ Settings** button (top right)
+### 📅 Google Calendar
+
+1. Open [Google Calendar](https://calendar.google.com) on a **computer**
+2. Click the **⚙️ gear icon** (top right) → **Settings**
+3. In the left sidebar, click the calendar you want to share
+4. Scroll down to **"Integrate calendar"** section
+5. Find **"Secret address in iCal format"**
+6. Copy the URL (starts with `https://calendar.google.com/calendar/ical/...`)
+
+> 💡 Use the **Secret address**, not the Public address—it works without making your calendar publicly searchable.
+
+---
+
+### 🍎 Apple iCloud Calendar
+
+#### Option A: From iCloud.com (easiest)
+1. Go to [icloud.com/calendar](https://www.icloud.com/calendar) and sign in
+2. In the left sidebar, click the **share icon** (person or signal icon) next to your calendar
+3. Toggle **"Public Calendar"** ON
+4. Click **"Copy Link"**
+5. The URL starts with `webcal://` — this works in Chronos
+
+#### Option B: From Mac Calendar app
+1. Open the **Calendar** app
+2. Right-click (or Control-click) the calendar you want to share
+3. Select **"Share Calendar..."**
+4. Check **"Public Calendar"**
+5. Click the **"Share Calendar"** button again to copy the link
+
+#### Option C: From iPhone/iPad Calendar app
+1. Open **Calendar** app
+2. Tap **"Calendars"** at the bottom
+3. Tap the **ⓘ info icon** next to the calendar you want
+4. Toggle **"Public Calendar"** ON
+5. Tap **"Share Link"** and copy it
+
+> ⚠️ Note: iCloud's "Public Calendar" just means it has a URL—only people you share the link with can see it.
+
+---
+
+### 📧 Outlook / Hotmail / Microsoft 365
+
+1. Go to [outlook.live.com/calendar](https://outlook.live.com/calendar) (or your Microsoft 365 calendar)
+2. Click the **⚙️ Settings gear** (top right)
+3. Click **"View all Outlook settings"** at the bottom
+4. Go to **Calendar** → **Shared calendars**
+5. Under **"Publish a calendar"**:
+   - Select your calendar from the dropdown
+   - Choose **"Can view all details"** for permissions
+   - Click **"Publish"**
+6. Copy the **ICS link** (not the HTML link)
+
+> 💡 The ICS link looks like: `https://outlook.live.com/owa/calendar/.../calendar.ics`
+
+---
+
+## Adding Calendars to Chronos
+
+Once you have your iCal URL:
+
+1. Open Chronos and tap the **⚙️ Settings** button (top right)
 2. Paste the URL in the **iCal URL** field
 3. Give it a name (e.g., "Work", "Family", "Kids")
 4. Pick a color
@@ -57,7 +111,7 @@ Launch Chronos from your home screen. It now runs as a standalone app—no brows
 
 ![Settings Panel](chronos2.png)
 
-Repeat for each calendar you want to track. They'll all show up color-coded.
+Repeat for each calendar. They'll all show up color-coded in your view.
 
 ---
 
@@ -81,7 +135,7 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 
 - **Enable notifications** when prompted—needed for reminders to work
 - **Multiple family members?** Each person sets up their own calendars on their own device. Nothing is shared between devices.
-- **Shared Google Calendar?** Just add the same calendar URL on each device
+- **Shared family calendar?** Everyone adds the same calendar URL on their own device
 - **Hide a calendar temporarily?** Use the toggle switch in Settings instead of deleting
 - **Customize reminder time** in Settings (15min to 2 hours)
 
@@ -105,13 +159,18 @@ Repeat for each calendar you want to track. They'll all show up color-coded.
 - Try removing and re-adding to Home Screen
 
 **Calendar not showing events:**
-- Double-check the iCal URL is correct (should start with `https://`)
+- Double-check the iCal URL is correct
 - Make sure the calendar has events in the current month
 - Check the calendar toggle is enabled in Settings
+- For iCloud: ensure "Public Calendar" is still toggled ON
 
 **No notifications:**
 - Tap "Enable" on the notification banner
 - Check iPad Settings → Safari → Notifications
+
+**Google Calendar: "Secret address" not showing:**
+- Your Google Workspace admin may have disabled this
+- Ask them to enable it in Admin Console → Apps → Google Workspace → Calendar → Sharing settings
 
 ---
 
